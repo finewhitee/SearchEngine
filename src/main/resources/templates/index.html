@@ -1,15 +1,15 @@
 
 <!--END-->
 <!--END--><!DOCTYPE html><!--[if IE 7]>
-<html class="ie7" lang="ru">
+<html class="ie7" lang="en">
 <![endif]-->
 <!--[if IE 8]>
-<html class="ie8" lang="ru">
+<html class="ie8" lang="en">
 <![endif]-->
 <!--[if IE 9]>
-<html class="ie9" lang="ru">
+<html class="ie9" lang="en">
 <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="ru"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
 <head>
   <title>Site Search Engine</title>
   <meta name="description" content="Site Search Engine">
@@ -18,7 +18,8 @@
   <!--meta( http-equiv="cache-control" content="no-cache")-->
   <!--meta( http-equiv="expires" content="0")-->
   <!--link(rel="preload" href="assets/css/extra.min.css?v=" + version as="style" crossorigin="anonymous")-->
-  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="shortcut icon" href="#" />
   <link rel="preload" href="/assets/fonts/Montserrat/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/assets/fonts/Montserrat/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/assets/fonts/Montserrat/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
@@ -111,7 +112,7 @@
                   </h3>
                   <form class="form form_close" action="#" method="post" data-send="indexPage">
                     <div class="form-group form-group_row">
-                      <input class="form-input" id="page" name="page" type="text"/>
+                      <label for="page"></label><input class="form-input" id="page" name="page" type="text"/>
                       <button class="btn btn_primary form-btn" type="submit">Add/update
                       </button>
                     </div>
@@ -129,14 +130,16 @@
                   <div class="form-group">
                     <div class="form-selectWrap">
                       <!-- - var options = setOptions(items, ['value', 'selected', 'disabled']);-->
-                      <select class="form-select" name="site">
-                        <option value="" selected="selected">All sites
-                        </option>
-                      </select>
+                      <label>
+                        <select class="form-select" name="site">
+                          <option value="" selected="selected">All sites
+                          </option>
+                        </select>
+                      </label>
                     </div>
                   </div>
                   <div class="form-group form-group_row">
-                    <input class="form-input" id="query" name="query" type="text" placeholder="Query"/>
+                    <label for="query"></label><input class="form-input" id="query" name="query" type="text" placeholder="Query"/>
                     <button class="btn btn_primary form-btn" type="submit">Search
                     </button>
                   </div>
