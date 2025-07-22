@@ -1,0 +1,25 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code (если используешь)
+.vscode/
+
+# Maven build output
+target/
+
+# Конфигурации с паролями и переменными
+application.yaml
+.env
+
+# База данных или временные файлы
+postgres-data/
+*.db
+
+# macOS системные файлы
+.DS_Store
+
+# Тестовые или случайно созданные файлы
+*.log
+*.tmp
+*~
