@@ -1,0 +1,6 @@
+### GET request to example server
+POST http://localhost:8080/api/indexPage?
+    url=https://www.playback.ru/catalog
+
+
+###

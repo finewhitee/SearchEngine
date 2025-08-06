@@ -1,0 +1,6 @@
+### GET request to example server
+GET http://localhost:8080/api/search?query=купить смартфон&site=https://www.playback.ru&offset=10&limit=100
+
+
+
+###
